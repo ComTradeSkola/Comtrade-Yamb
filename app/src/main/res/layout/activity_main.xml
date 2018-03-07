@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aprivate.bane.yamb.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <ToggleButton
+        android:id="@+id/dice1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/toggle_button_selector"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textOff=""
+        android:textOn=""
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <ToggleButton
+        android:id="@+id/dice2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/toggle_button_selector"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textOff=""
+        android:textOn=""
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <ToggleButton
+        android:id="@+id/dice3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/toggle_button_selector"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textOff=""
+        android:textOn=""
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <ToggleButton
+        android:id="@+id/dice4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/toggle_button_selector"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textOff=""
+        android:textOn=""
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <ToggleButton
+        android:id="@+id/dice5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/toggle_button_selector"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textOff=""
+        android:textOn=""
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <ToggleButton
+        android:id="@+id/dice6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/toggle_button_selector"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textOff=""
+        android:textOn=""
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="328dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <Button
+        android:id="@+id/nextThrow"
+        android:layout_width="368dp"
+        android:layout_height="45dp"
+        android:text="rool"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="465dp" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:text="IGRA"
+        app:layout_constraintBottom_toTopOf="@+id/textView51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/textView43"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView57"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="YAMB"
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView46"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="POKER"
+        app:layout_constraintBottom_toTopOf="@+id/textView47"
+        app:layout_constraintTop_toBottomOf="@+id/textView30"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/textView42"
+        app:layout_constraintTop_toBottomOf="@+id/textView38"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/textView38"
+        app:layout_constraintTop_toBottomOf="@+id/textView52"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="Σ"
+        app:layout_constraintBottom_toTopOf="@+id/textView37"
+        app:layout_constraintTop_toBottomOf="@+id/textView44"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="MIN"
+        app:layout_constraintBottom_toTopOf="@+id/textView39"
+        app:layout_constraintTop_toBottomOf="@+id/textView37"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="Σ"
+        app:layout_constraintBottom_toTopOf="@+id/textView33"
+        app:layout_constraintTop_toBottomOf="@+id/textView41"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/textView44"
+        app:layout_constraintTop_toBottomOf="@+id/textView43"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="MAX"
+        app:layout_constraintBottom_toTopOf="@+id/textView41"
+        app:layout_constraintTop_toBottomOf="@+id/textView42"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="FULL"
+        app:layout_constraintBottom_toTopOf="@+id/textView46"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/textView52"
+        app:layout_constraintTop_toBottomOf="@+id/textView51"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="Σ"
+        app:layout_constraintBottom_toTopOf="@+id/dice1"
+        app:layout_constraintTop_toBottomOf="@+id/textView47"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="KENTA"
+        app:layout_constraintBottom_toTopOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/aaa"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:text=" ⬇"
+        app:layout_constraintBottom_toTopOf="@+id/a1"
+        app:layout_constraintStart_toEndOf="@+id/textView57"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/a1"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/a2"
+        app:layout_constraintTop_toBottomOf="@+id/aaa"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/a2"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/a3"
+        app:layout_constraintTop_toBottomOf="@+id/a1"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/a12"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/a13"
+        app:layout_constraintTop_toBottomOf="@+id/a11"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/a11"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/a12"
+        app:layout_constraintTop_toBottomOf="@+id/a10"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/a6"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/sumaA"
+        app:layout_constraintTop_toBottomOf="@+id/a5"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/a4"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/a5"
+        app:layout_constraintTop_toBottomOf="@+id/a3"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/sumaA"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/a7"
+        app:layout_constraintTop_toBottomOf="@+id/a6"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/a8"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/sumaAminmax"
+        app:layout_constraintTop_toBottomOf="@+id/a7"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/sumaAveliki"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/dice2"
+        app:layout_constraintTop_toBottomOf="@+id/a13"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/a5"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/a6"
+        app:layout_constraintTop_toBottomOf="@+id/a4"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/a7"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/a8"
+        app:layout_constraintTop_toBottomOf="@+id/sumaA"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/a10"
+        android:layout_width="40dp"
+        android:layout_height="17dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/a11"
+        app:layout_constraintTop_toBottomOf="@+id/a9"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/a3"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/a4"
+        app:layout_constraintTop_toBottomOf="@+id/a2"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/a13"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/sumaAveliki"
+        app:layout_constraintTop_toBottomOf="@+id/a12"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/a9"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/a10"
+        app:layout_constraintTop_toBottomOf="@+id/sumaAminmax"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/sumaAminmax"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/a9"
+        app:layout_constraintTop_toBottomOf="@+id/a8"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        android:id="@+id/sumaDveliki"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/dice5"
+        app:layout_constraintTop_toBottomOf="@+id/d13"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/sumaCveliki"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/dice4"
+        app:layout_constraintTop_toBottomOf="@+id/c13"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/sumaBveliki"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/dice3"
+        app:layout_constraintTop_toBottomOf="@+id/b13"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/sumaPrvihKolona"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="16dp"
+        android:text="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <TextView
+        android:id="@+id/c13"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/sumaCveliki"
+        app:layout_constraintTop_toBottomOf="@+id/c12"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/c9"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/c10"
+        app:layout_constraintTop_toBottomOf="@+id/sumaCminmax"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/ccc"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:text="⬆"
+        app:layout_constraintBottom_toTopOf="@+id/c1"
+        app:layout_constraintStart_toEndOf="@+id/bbb"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/c3"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/c4"
+        app:layout_constraintTop_toBottomOf="@+id/c2"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/c5"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/c6"
+        app:layout_constraintTop_toBottomOf="@+id/c4"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/c12"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/c13"
+        app:layout_constraintTop_toBottomOf="@+id/c11"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/c11"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/c12"
+        app:layout_constraintTop_toBottomOf="@+id/c10"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/c6"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/sumaC"
+        app:layout_constraintTop_toBottomOf="@+id/c5"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/c4"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/c5"
+        app:layout_constraintTop_toBottomOf="@+id/c3"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/sumaC"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/c7"
+        app:layout_constraintTop_toBottomOf="@+id/c6"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/c8"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/sumaCminmax"
+        app:layout_constraintTop_toBottomOf="@+id/c7"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/sumaCminmax"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/c9"
+        app:layout_constraintTop_toBottomOf="@+id/c8"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/c1"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/c2"
+        app:layout_constraintTop_toBottomOf="@+id/ccc"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/c7"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/c8"
+        app:layout_constraintTop_toBottomOf="@+id/sumaC"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/c10"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/c11"
+        app:layout_constraintTop_toBottomOf="@+id/c9"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/c2"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/c3"
+        app:layout_constraintTop_toBottomOf="@+id/c1"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <TextView
+        android:id="@+id/ddd"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="➡⬅"
+        app:layout_constraintBottom_toTopOf="@+id/d1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/d2"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/d3"
+        app:layout_constraintTop_toBottomOf="@+id/d1"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/d1"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/d2"
+        app:layout_constraintTop_toBottomOf="@+id/ddd"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/d12"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/d13"
+        app:layout_constraintTop_toBottomOf="@+id/d11"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/d11"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/d12"
+        app:layout_constraintTop_toBottomOf="@+id/d10"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/d6"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/sumaD"
+        app:layout_constraintTop_toBottomOf="@+id/d5"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/d4"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/d5"
+        app:layout_constraintTop_toBottomOf="@+id/d3"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/sumaD"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/d7"
+        app:layout_constraintTop_toBottomOf="@+id/d6"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/d8"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/sumaDminmax"
+        app:layout_constraintTop_toBottomOf="@+id/d7"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/sumaDminmax"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/d9"
+        app:layout_constraintTop_toBottomOf="@+id/d8"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/d5"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/d6"
+        app:layout_constraintTop_toBottomOf="@+id/d4"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/d7"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/d8"
+        app:layout_constraintTop_toBottomOf="@+id/sumaD"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/d10"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/d11"
+        app:layout_constraintTop_toBottomOf="@+id/d9"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/d3"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/d4"
+        app:layout_constraintTop_toBottomOf="@+id/d2"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/d13"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/sumaDveliki"
+        app:layout_constraintTop_toBottomOf="@+id/d12"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/d9"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/d10"
+        app:layout_constraintTop_toBottomOf="@+id/sumaDminmax"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <TextView
+        android:id="@+id/b2"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/b3"
+        app:layout_constraintTop_toBottomOf="@+id/b1"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/bbb"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:text="⬆ ⬇"
+        app:layout_constraintBottom_toTopOf="@+id/b1"
+        app:layout_constraintStart_toEndOf="@+id/aaa"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/b1"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/b2"
+        app:layout_constraintTop_toBottomOf="@+id/bbb"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/b12"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/b13"
+        app:layout_constraintTop_toBottomOf="@+id/b11"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/b11"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/b12"
+        app:layout_constraintTop_toBottomOf="@+id/b10"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/b6"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/sumaB"
+        app:layout_constraintTop_toBottomOf="@+id/b5"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/b4"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/b5"
+        app:layout_constraintTop_toBottomOf="@+id/b3"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/sumaB"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/b7"
+        app:layout_constraintTop_toBottomOf="@+id/b6"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/b8"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/sumaBminmax"
+        app:layout_constraintTop_toBottomOf="@+id/b7"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/sumaBminmax"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/b9"
+        app:layout_constraintTop_toBottomOf="@+id/b8"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/b5"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/b6"
+        app:layout_constraintTop_toBottomOf="@+id/b4"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/b7"
+        android:layout_width="41dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/b8"
+        app:layout_constraintTop_toBottomOf="@+id/sumaB"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="TRILING"
+        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView39"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/b9"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/b10"
+        app:layout_constraintTop_toBottomOf="@+id/sumaBminmax"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/b3"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/b4"
+        app:layout_constraintTop_toBottomOf="@+id/b2"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/b13"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/sumaBveliki"
+        app:layout_constraintTop_toBottomOf="@+id/b12"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/b10"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/b11"
+        app:layout_constraintTop_toBottomOf="@+id/b9"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <TextView
+        android:id="@+id/sumaTrecihKolona"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="16dp"
+        android:text="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <TextView
+        android:id="@+id/sumaDrugihKolona"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="16dp"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
