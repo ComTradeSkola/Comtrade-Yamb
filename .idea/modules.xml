@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Comtrade-Yamb.iml" filepath="$PROJECT_DIR$/Comtrade-Yamb.iml" />
+      <module fileurl="file://C:\Users\Bane\Desktop\git\YAMB\Comtrade-Yamb.iml" filepath="C:\Users\Bane\Desktop\git\YAMB\Comtrade-Yamb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YAMB.iml" filepath="$PROJECT_DIR$/YAMB.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
