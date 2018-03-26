@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.ToggleButton;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -101,4 +102,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void doleColonaClick(View view) {
+        int id = view.getId();
+        switch (id) {
+            case R.id.a1:
+                int ukupnoJedinica = hand.kolikoImaKockica(1);
+                ((TextView) view).setText("" + ukupnoJedinica);
+                break;
+        }
+    }
 }

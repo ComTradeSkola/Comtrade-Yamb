@@ -145,6 +145,13 @@ public class Hand {
         }
     }
 
+    public int kolikoImaKockica(int n) {
+        if (n >=1 && n <= numberOfDiceces) {
+            return rez[n-1];
+        }
+        return -1;
+    }
+
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();

@@ -255,6 +255,7 @@
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:text="1"
+        android:onClick="doleColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/a2"
         app:layout_constraintTop_toBottomOf="@+id/aaa"
         tools:layout_editor_absoluteX="80dp" />
@@ -264,6 +265,7 @@
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:text="1"
+        android:onClick="doleColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/a3"
         app:layout_constraintTop_toBottomOf="@+id/a1"
         tools:layout_editor_absoluteX="80dp" />
