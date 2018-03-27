@@ -221,5 +221,74 @@ public class MainActivity extends AppCompatActivity {
                 izracunajSumu();
                 break;
         }
+        switch (id) {
+            case R.id.b1:
+                int ukupno = klikNaDoleKolonu(view, 1, R.id.b2);
+                sumaNaDoleBrojevi += ukupno;
+                updateSumaNaDoleBrojevi();
+                break;
+            case R.id.b2:
+                klikNaDoleKolonu(view, 2, R.id.b3);
+                break;
+            case R.id.b3:
+                klikNaDoleKolonu(view, 3, R.id.b4);
+                break;
+            case R.id.b4:
+                klikNaDoleKolonu(view, 4, R.id.b5);
+                break;
+            case R.id.b5:
+                klikNaDoleKolonu(view, 5, R.id.b6);
+                break;
+            case R.id.b6:
+                klikNaDoleKolonu(view, 6, R.id.b7);
+                izracunajSumu();
+                break;
+        }
+        switch (id) {
+            case R.id.c1:
+                int ukupno = klikNaDoleKolonu(view, 1, R.id.c2);
+                sumaNaDoleBrojevi += ukupno;
+                updateSumaNaDoleBrojevi();
+                break;
+            case R.id.c2:
+                klikNaDoleKolonu(view, 2, R.id.c3);
+                break;
+            case R.id.c3:
+                klikNaDoleKolonu(view, 3, R.id.c4);
+                break;
+            case R.id.c4:
+                klikNaDoleKolonu(view, 4, R.id.c5);
+                break;
+            case R.id.c5:
+                klikNaDoleKolonu(view, 5, R.id.c6);
+                break;
+            case R.id.c6:
+                klikNaDoleKolonu(view, 6, R.id.c7);
+                izracunajSumu();
+                break;
+        }
+        switch (id) {
+            case R.id.d1:
+                int ukupno = klikNaDoleKolonu(view, 1, R.id.d2);
+                sumaNaDoleBrojevi += ukupno;
+                updateSumaNaDoleBrojevi();
+                break;
+            case R.id.d2:
+                klikNaDoleKolonu(view, 2, R.id.d3);
+                break;
+            case R.id.d3:
+                klikNaDoleKolonu(view, 3, R.id.d4);
+                break;
+            case R.id.d4:
+                klikNaDoleKolonu(view, 4, R.id.d5);
+                break;
+            case R.id.d5:
+                klikNaDoleKolonu(view, 5, R.id.d6);
+                break;
+            case R.id.d6:
+                klikNaDoleKolonu(view, 6, R.id.d7);
+                izracunajSumu();
+                break;
+        }
     }
 }
