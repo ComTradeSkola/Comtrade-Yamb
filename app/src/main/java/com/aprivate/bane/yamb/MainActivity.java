@@ -163,32 +163,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void doleColonaClick(View view) {
-        int id = view.getId();
-        switch (id) {
-            case R.id.a1:
-                int ukupno = klikNaDoleKolonu(view, 1, R.id.a2);
-                sumaNaDoleBrojevi += ukupno;
-                updateSumaNaDoleBrojevi();
-                break;
-            case R.id.a2:
-                klikNaDoleKolonu(view, 2, R.id.a3);
-                break;
-            case R.id.a3:
-                klikNaDoleKolonu(view, 3, R.id.a4);
-                break;
-            case R.id.a4:
-                klikNaDoleKolonu(view, 4, R.id.a5);
-                break;
-            case R.id.a5:
-                klikNaDoleKolonu(view, 5, R.id.a6);
-                break;
-            case R.id.a6:
-                klikNaDoleKolonu(view, 6, R.id.a7);
-                izracunajSumu();
-                break;
-        }
-    }
+
 
     private void updateSumaNaDoleBrojevi() {
         TextView textView = findViewById(R.id.sumaA);
@@ -219,5 +194,32 @@ public class MainActivity extends AppCompatActivity {
     public void postaviPoljeZaKlikcUDoleKoloni() {
         TextView textView = findViewById(enablovanUDoleKoloni);
         textView.setEnabled(true);
+    }
+
+    public void doleColonaClick(View view) {
+        int id = view.getId();
+        switch (id) {
+            case R.id.a1:
+                int ukupno = klikNaDoleKolonu(view, 1, R.id.a2);
+                sumaNaDoleBrojevi += ukupno;
+                updateSumaNaDoleBrojevi();
+                break;
+            case R.id.a2:
+                klikNaDoleKolonu(view, 2, R.id.a3);
+                break;
+            case R.id.a3:
+                klikNaDoleKolonu(view, 3, R.id.a4);
+                break;
+            case R.id.a4:
+                klikNaDoleKolonu(view, 4, R.id.a5);
+                break;
+            case R.id.a5:
+                klikNaDoleKolonu(view, 5, R.id.a6);
+                break;
+            case R.id.a6:
+                klikNaDoleKolonu(view, 6, R.id.a7);
+                izracunajSumu();
+                break;
+        }
     }
 }
