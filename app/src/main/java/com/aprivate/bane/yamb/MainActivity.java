@@ -5,7 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -19,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     Hand hand;
 
     Button roolButton;
+    boolean daLiMoguDaBacam;
+    int enablovanUDoleKoloni;
+    int sumaNaDoleBrojevi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +35,11 @@ public class MainActivity extends AppCompatActivity {
             diceButtons[i].setEnabled(false);
         }
 
+        enablovanUDoleKoloni = R.id.a1;
+        postaviPoljeZaKlikcUDoleKoloni();
+
         hand = new Hand();
-
-
+        daLiMoguDaBacam = true;
         roolButton = findViewById(R.id.nextThrow);
         roolButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,40 +51,93 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void rool() {
-        List<Integer> niz = new ArrayList<>();
-        if (hand.bacanje == Hand.Bacanje.TRECE_BACANJE) {
-            for (int i = 0; i < diceButtons.length; i++) {
-                diceButtons[i].setChecked(false);
+        if (hand.bacanje != Hand.Bacanje.KRAJ) {
+            List<Integer> niz = new ArrayList<>();
+            switch (hand.bacanje) {
+                case POCETAK:
+                    niz.addAll(Arrays.asList(0, 1, 2, 3, 4, 5));
+                    hand.nextThrow(niz);
+                    hand.bacanje = Hand.Bacanje.PRVO_BACANJE;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    break;
+                case PRVO_BACANJE:
+                    for (int i = 0; i < diceButtons.length; i++) {
+                        if (!diceButtons[i].isChecked()) {
+                            niz.add(i);
+                        }
+                    }
+                    hand.nextThrow(niz);
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    hand.bacanje = Hand.Bacanje.DRUGO_BACANJE;
+                case DRUGO_BACANJE:
+                    for (int i = 0; i < diceButtons.length; i++) {
+                        if (!diceButtons[i].isChecked()) {
+                            niz.add(i);
+                        }
+                    }
+                    hand.nextThrow(niz);
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    hand.bacanje = Hand.Bacanje.TRECE_BACANJE;
+                    break;
+                case TRECE_BACANJE:
+                    for (int i = 0; i < diceButtons.length; i++) {
+                        if (!diceButtons[i].isChecked()) {
+                            niz.add(i);
+                        }
+                    }
+                    hand.nextThrow(niz);
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    hand.bacanje = Hand.Bacanje.KRAJ;
+                    break;
             }
-            hand.bacanje = Hand.Bacanje.POCETAK;
-            niz.addAll(Arrays.asList(0, 1, 2, 3, 4, 5));
         } else {
-            for (int i = 0; i < diceButtons.length; i++) {
-                if (!diceButtons[i].isChecked()) {
-                    niz.add(i);
-                }
-            }
+            Toast.makeText(this, "Molim Vas upisite rezultat", Toast.LENGTH_SHORT).show();
         }
-        hand.nextThrow(niz);
-        prikaziBacanje();
-        setRoolButtonText();
+
+
     }
 
     private void prikaziBacanje() {
-        if (hand.bacanje == Hand.Bacanje.TRECE_BACANJE) {
-            for (int i = 0; i < diceButtons.length; i++) {
-                diceButtons[i].setEnabled(false);
-            }
-        } else if (hand.bacanje != Hand.Bacanje.POCETAK) {
-            for (int i = 0; i < diceButtons.length; i++) {
-                diceButtons[i].setEnabled(true);
-            }
+        switch (hand.bacanje) {
+            case POCETAK:
+                for (int i = 0; i < diceButtons.length; i++) {
+                    diceButtons[i].setEnabled(false);
+                    diceButtons[i].setChecked(false);
+                }
+                break;
+            case PRVO_BACANJE:
+                for (int i = 0; i < diceButtons.length; i++) {
+                    diceButtons[i].setEnabled(true);
+                }
+                break;
+            case DRUGO_BACANJE:
+                for (int i = 0; i < diceButtons.length; i++) {
+                    diceButtons[i].setEnabled(true);
+                }
+                break;
+            case TRECE_BACANJE:
+                for (int i = 0; i < diceButtons.length; i++) {
+                    diceButtons[i].setEnabled(false);
+                    diceButtons[i].setChecked(false);
+                }
+                break;
+
         }
         for (int i = 0; i < diceButtons.length; i++) {
-            int value = hand.getKockica(i);
-            diceButtons[i].setText(value + "");
-            diceButtons[i].setTextOn(value + "");
-            diceButtons[i].setTextOff(value + "");
+            if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                int value = hand.getKockica(i);
+                diceButtons[i].setText(value + "");
+                diceButtons[i].setTextOn(value + "");
+                diceButtons[i].setTextOff(value + "");
+            } else {
+                diceButtons[i].setText("");
+                diceButtons[i].setTextOn("");
+                diceButtons[i].setTextOff("");
+            }
         }
     }
 
@@ -95,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
                 roolButtonText = "Start";
                 break;
         }
+
         roolButton.setText(roolButtonText);
     }
 
@@ -106,9 +167,57 @@ public class MainActivity extends AppCompatActivity {
         int id = view.getId();
         switch (id) {
             case R.id.a1:
-                int ukupnoJedinica = hand.kolikoImaKockica(1);
-                ((TextView) view).setText("" + ukupnoJedinica);
+                int ukupno = klikNaDoleKolonu(view, 1, R.id.a2);
+                sumaNaDoleBrojevi += ukupno;
+                updateSumaNaDoleBrojevi();
+                break;
+            case R.id.a2:
+                klikNaDoleKolonu(view, 2, R.id.a3);
+                break;
+            case R.id.a3:
+                klikNaDoleKolonu(view, 3, R.id.a4);
+                break;
+            case R.id.a4:
+                klikNaDoleKolonu(view, 4, R.id.a5);
+                break;
+            case R.id.a5:
+                klikNaDoleKolonu(view, 5, R.id.a6);
+                break;
+            case R.id.a6:
+                klikNaDoleKolonu(view, 6, R.id.a7);
+                izracunajSumu();
                 break;
         }
+    }
+
+    private void updateSumaNaDoleBrojevi() {
+        TextView textView = findViewById(R.id.sumaA);
+        textView.setText(sumaNaDoleBrojevi + "");
+    }
+
+    private void izracunajSumu() {
+
+    }
+
+    private int klikNaDoleKolonu(View view, int kockica, int sledecePolje) {
+        int ukupno = 0;
+        if (hand.bacanje != Hand.Bacanje.POCETAK) {
+            ukupno = hand.kolikoImaKockica(kockica) * kockica;
+            ((TextView) view).setText("" + ukupno);
+            hand.bacanje = Hand.Bacanje.POCETAK;
+            prikaziBacanje();
+            setRoolButtonText();
+            view.setEnabled(false);
+            enablovanUDoleKoloni = sledecePolje;
+            postaviPoljeZaKlikcUDoleKoloni();
+        } else {
+            Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+        }
+        return ukupno;
+    }
+
+    public void postaviPoljeZaKlikcUDoleKoloni() {
+        TextView textView = findViewById(enablovanUDoleKoloni);
+        textView.setEnabled(true);
     }
 }

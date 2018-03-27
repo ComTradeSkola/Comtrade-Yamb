@@ -39,17 +39,14 @@ public class Hand {
             case POCETAK:
                 generisiNoveKockice(izborKockica);
                 izbrojKockice();
-                bacanje = Bacanje.PRVO_BACANJE;
                 break;
             case PRVO_BACANJE:
                 generisiNoveKockice(izborKockica);
                 izbrojKockice();
-                bacanje = Bacanje.DRUGO_BACANJE;
                 break;
             case DRUGO_BACANJE:
                 generisiNoveKockice(izborKockica);
                 izbrojKockice();
-                bacanje = Bacanje.TRECE_BACANJE;
                 break;
             case TRECE_BACANJE:
                 System.out.println("Ne moze, ruka je gotova, mora reset");
@@ -208,7 +205,8 @@ public class Hand {
         POCETAK,
         PRVO_BACANJE,
         DRUGO_BACANJE,
-        TRECE_BACANJE
+        TRECE_BACANJE,
+        KRAJ
     }
 }
 
