@@ -224,7 +224,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+       
         tools:layout_editor_absoluteX="136dp"
         tools:layout_editor_absoluteY="31dp" />
 
@@ -234,7 +234,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="136dp"
         tools:layout_editor_absoluteY="54dp" />
 
@@ -244,7 +244,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="136dp"
         tools:layout_editor_absoluteY="77dp" />
 
@@ -254,7 +254,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="136dp"
         tools:layout_editor_absoluteY="100dp" />
 
@@ -264,7 +264,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="136dp"
         tools:layout_editor_absoluteY="120dp" />
 
@@ -274,7 +274,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="136dp"
         tools:layout_editor_absoluteY="144dp" />
 
@@ -284,7 +284,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="189dp" />
 
@@ -294,7 +294,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="209dp" />
 
@@ -304,7 +304,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="249dp" />
 
@@ -314,7 +314,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="269dp" />
 
@@ -324,7 +324,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="135dp"
         tools:layout_editor_absoluteY="289dp" />
 
@@ -334,7 +334,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="309dp" />
 
@@ -344,7 +344,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="329dp" />
 
@@ -355,7 +355,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="27dp" />
 
@@ -365,7 +365,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="50dp" />
 
@@ -375,7 +375,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="73dp" />
 
@@ -385,7 +385,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="96dp" />
 
@@ -395,7 +395,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="119dp" />
 
@@ -405,7 +405,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="142dp" />
 
@@ -415,7 +415,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="189dp" />
 
@@ -425,7 +425,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="212dp" />
 
@@ -435,7 +435,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="258dp" />
 
@@ -445,7 +445,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="281dp" />
 
@@ -455,7 +455,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="305dp" />
 
@@ -465,7 +465,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="328dp" />
 
@@ -475,7 +475,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="351dp" />
 
