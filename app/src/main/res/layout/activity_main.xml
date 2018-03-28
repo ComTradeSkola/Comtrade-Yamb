@@ -486,7 +486,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+        android:onClick="goreColonaClick"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="27dp" />
 
@@ -496,7 +496,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+        android:onClick="goreColonaClick"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="50dp" />
 
@@ -506,7 +506,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+        android:onClick="goreColonaClick"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="73dp" />
 
@@ -516,7 +516,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+        android:onClick="goreColonaClick"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="96dp" />
 
@@ -526,7 +526,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+        android:onClick="goreColonaClick"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="119dp" />
 
@@ -536,7 +536,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+        android:onClick="goreColonaClick"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="142dp" />
 
@@ -546,7 +546,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+        android:onClick="goreColonaClick"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="189dp" />
 
@@ -556,7 +556,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+        android:onClick="goreColonaClick"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="212dp" />
 
@@ -566,7 +566,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+        android:onClick="goreColonaClick"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="258dp" />
 
@@ -576,7 +576,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+        android:onClick="goreColonaClick"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="281dp" />
 
@@ -586,7 +586,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+        android:onClick="goreColonaClick"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="305dp" />
 
@@ -596,7 +596,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+        android:onClick="goreColonaClick"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="328dp" />
 
@@ -606,7 +606,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        android:onClick="doleColonaClick"
+        android:onClick="goreColonaClick"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="351dp" />
 
