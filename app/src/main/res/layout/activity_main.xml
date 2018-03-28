@@ -12,53 +12,65 @@
         android:id="@+id/dice1"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/toggle_button_selector"
         android:text=""
         android:textColor="#FFFFFF"
         android:textOff=""
         android:textOn=""
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintBottom_toTopOf="@+id/nextThrow"
+        app:layout_constraintEnd_toStartOf="@+id/dice2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ToggleButton
         android:id="@+id/dice2"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/toggle_button_selector"
         android:text=""
         android:textColor="#FFFFFF"
         android:textOff=""
         android:textOn=""
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintBottom_toTopOf="@+id/nextThrow"
+        app:layout_constraintEnd_toStartOf="@+id/dice3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dice1" />
 
     <ToggleButton
         android:id="@+id/dice3"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/toggle_button_selector"
         android:text=""
         android:textColor="#FFFFFF"
         android:textOff=""
         android:textOn=""
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintBottom_toTopOf="@+id/nextThrow"
+        app:layout_constraintEnd_toStartOf="@+id/dice4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dice2" />
 
     <ToggleButton
         android:id="@+id/dice4"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/toggle_button_selector"
         android:text=""
         android:textColor="#FFFFFF"
         android:textOff=""
         android:textOn=""
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintBottom_toTopOf="@+id/nextThrow"
+        app:layout_constraintEnd_toStartOf="@+id/dice5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dice3" />
 
     <ToggleButton
         android:id="@+id/dice5"
@@ -70,29 +82,35 @@
         android:textOff=""
         android:textOn=""
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/dice4"
+        app:layout_constraintEnd_toStartOf="@+id/dice6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dice4" />
 
     <ToggleButton
         android:id="@+id/dice6"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/toggle_button_selector"
         android:text=""
         android:textColor="#FFFFFF"
         android:textOff=""
         android:textOn=""
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="322dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintBottom_toTopOf="@+id/nextThrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dice5" />
 
     <Button
         android:id="@+id/nextThrow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="rool"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="455dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="24dp" />
 
 
     <TextView
@@ -224,7 +242,7 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-       
+
         tools:layout_editor_absoluteX="136dp"
         tools:layout_editor_absoluteY="31dp" />
 
@@ -700,8 +718,8 @@
         android:layout_height="20dp"
         android:background="@drawable/text_view_border"
         android:enabled="false"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="349dp" />
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="371dp" />
 
     <TextView
         android:id="@+id/sumaCveliki"
@@ -756,8 +774,8 @@
         android:layout_height="20dp"
         android:onClick="onClick"
         android:text=" ⬇"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="8dp" />
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="3dp" />
 
 
     <TextView
@@ -816,24 +834,27 @@
         android:id="@+id/textView47"
         android:layout_width="50dp"
         android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
         android:text="YAMB"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="351dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        tools:layout_editor_absoluteX="16dp" />
 
     <TextView
         android:id="@+id/textView46"
         android:layout_width="50dp"
         android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
         android:text="POKER"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="328dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView47"
+        tools:layout_editor_absoluteX="16dp" />
 
     <TextView
         android:id="@+id/textView57"
         android:layout_width="50dp"
         android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
         android:text="IGRA"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
         tools:layout_editor_absoluteY="3dp" />
 
 
@@ -918,9 +939,10 @@
         android:id="@+id/textView28"
         android:layout_width="50dp"
         android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
         android:text="Σ"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="374dp" />
+        app:layout_constraintBottom_toTopOf="@+id/dice1"
+        tools:layout_editor_absoluteX="16dp" />
 
     <TextView
         android:id="@+id/textView27"
