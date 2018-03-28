@@ -24,6 +24,14 @@ public class MainActivity extends AppCompatActivity {
     boolean daLiMoguDaBacam;
     int enablovanUDoleKoloni;
     int sumaNaDoleBrojevi;
+    int sumaNaDoleMinMax;
+    int kolikoImaKecevaDole;
+    int enablovanUGoreKoloni;
+    int sumaNaGoreBrojevi;
+    int sumaNaGoreMinMax;
+    int kolikoImaKecevaGore;
+    int kolikoImaSesticaGore;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -164,7 +172,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     private void updateSumaNaDoleBrojevi() {
         TextView textView = findViewById(R.id.sumaA);
         textView.setText(sumaNaDoleBrojevi + "");
@@ -199,11 +206,13 @@ public class MainActivity extends AppCompatActivity {
     public void doleColonaClick(View view) {
         int id = view.getId();
         switch (id) {
-            case R.id.a1:
+            case R.id.a1: {
                 int ukupno = klikNaDoleKolonu(view, 1, R.id.a2);
                 sumaNaDoleBrojevi += ukupno;
                 updateSumaNaDoleBrojevi();
-                break;
+                kolikoImaKecevaDole = ukupno;
+            }
+            break;
             case R.id.a2:
                 klikNaDoleKolonu(view, 2, R.id.a3);
                 break;
@@ -220,75 +229,330 @@ public class MainActivity extends AppCompatActivity {
                 klikNaDoleKolonu(view, 6, R.id.a7);
                 izracunajSumu();
                 break;
-        }
-        switch (id) {
-            case R.id.b1:
-                int ukupno = klikNaDoleKolonu(view, 1, R.id.b2);
-                sumaNaDoleBrojevi += ukupno;
-                updateSumaNaDoleBrojevi();
-                break;
-            case R.id.b2:
-                klikNaDoleKolonu(view, 2, R.id.b3);
-                break;
-            case R.id.b3:
-                klikNaDoleKolonu(view, 3, R.id.b4);
-                break;
-            case R.id.b4:
-                klikNaDoleKolonu(view, 4, R.id.b5);
-                break;
-            case R.id.b5:
-                klikNaDoleKolonu(view, 5, R.id.b6);
-                break;
-            case R.id.b6:
-                klikNaDoleKolonu(view, 6, R.id.b7);
-                izracunajSumu();
-                break;
-        }
-        switch (id) {
-            case R.id.c1:
-                int ukupno = klikNaDoleKolonu(view, 1, R.id.c2);
-                sumaNaDoleBrojevi += ukupno;
-                updateSumaNaDoleBrojevi();
-                break;
-            case R.id.c2:
-                klikNaDoleKolonu(view, 2, R.id.c3);
-                break;
-            case R.id.c3:
-                klikNaDoleKolonu(view, 3, R.id.c4);
-                break;
-            case R.id.c4:
-                klikNaDoleKolonu(view, 4, R.id.c5);
-                break;
-            case R.id.c5:
-                klikNaDoleKolonu(view, 5, R.id.c6);
-                break;
-            case R.id.c6:
-                klikNaDoleKolonu(view, 6, R.id.c7);
-                izracunajSumu();
-                break;
-        }
-        switch (id) {
-            case R.id.d1:
-                int ukupno = klikNaDoleKolonu(view, 1, R.id.d2);
-                sumaNaDoleBrojevi += ukupno;
-                updateSumaNaDoleBrojevi();
-                break;
-            case R.id.d2:
-                klikNaDoleKolonu(view, 2, R.id.d3);
-                break;
-            case R.id.d3:
-                klikNaDoleKolonu(view, 3, R.id.d4);
-                break;
-            case R.id.d4:
-                klikNaDoleKolonu(view, 4, R.id.d5);
-                break;
-            case R.id.d5:
-                klikNaDoleKolonu(view, 5, R.id.d6);
-                break;
-            case R.id.d6:
-                klikNaDoleKolonu(view, 6, R.id.d7);
-                izracunajSumu();
-                break;
+
+            case R.id.a7: {
+                int ukupno = 0;
+                if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                    ukupno = hand.max();
+                    sumaNaDoleMinMax += ukupno;
+                    ((TextView) view).setText("" + ukupno);
+                    hand.bacanje = Hand.Bacanje.POCETAK;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    view.setEnabled(false);
+                    enablovanUDoleKoloni = R.id.a8;
+                    postaviPoljeZaKlikcUDoleKoloni();
+                } else {
+                    Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+                }
+            }
+            break;
+
+            case R.id.a8: {
+                int ukupno = 0;
+                if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                    ukupno = hand.min();
+                    sumaNaDoleMinMax -= ukupno;
+                    ((TextView) view).setText("" + ukupno);
+                    hand.bacanje = Hand.Bacanje.POCETAK;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    view.setEnabled(false);
+                    enablovanUDoleKoloni = R.id.a9;
+                    postaviPoljeZaKlikcUDoleKoloni();
+                    sumaNaDoleMinMax *= kolikoImaKecevaDole;
+                    TextView suma = findViewById(R.id.sumaAminmax);
+                    suma.setText(sumaNaDoleMinMax + "");
+                } else {
+                    Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+                }
+            }
+            break;
+
+            case R.id.a9: {
+                int ukupno = 0;
+                if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                    ukupno = hand.triling();
+                    ((TextView) view).setText("" + ukupno);
+                    hand.bacanje = Hand.Bacanje.POCETAK;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    view.setEnabled(false);
+                    enablovanUDoleKoloni = R.id.a10;
+                    postaviPoljeZaKlikcUDoleKoloni();
+
+
+                } else {
+                    Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+                }
+            }
+            break;
+
+
+            case R.id.a10: {
+                int ukupno = 0;
+                if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                    ukupno = hand.kenta();
+                    ((TextView) view).setText("" + ukupno);
+                    hand.bacanje = Hand.Bacanje.POCETAK;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    view.setEnabled(false);
+                    enablovanUDoleKoloni = R.id.a11;
+                    postaviPoljeZaKlikcUDoleKoloni();
+
+
+                } else {
+                    Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+                }
+            }
+            break;
+
+            case R.id.a11: {
+                int ukupno = 0;
+                if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                    ukupno = hand.full();
+                    ((TextView) view).setText("" + ukupno);
+                    hand.bacanje = Hand.Bacanje.POCETAK;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    view.setEnabled(false);
+                    enablovanUDoleKoloni = R.id.a12;
+                    postaviPoljeZaKlikcUDoleKoloni();
+
+
+                } else {
+                    Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+                }
+            }
+            break;
+
+            case R.id.a12: {
+                int ukupno = 0;
+                if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                    ukupno = hand.poker();
+                    ((TextView) view).setText("" + ukupno);
+                    hand.bacanje = Hand.Bacanje.POCETAK;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    view.setEnabled(false);
+                    enablovanUDoleKoloni = R.id.a13;
+                    postaviPoljeZaKlikcUDoleKoloni();
+
+
+                } else {
+                    Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+                }
+            }
+            break;
+            case R.id.a13: {
+                int ukupno = 0;
+                if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                    ukupno = hand.yumb();
+                    ((TextView) view).setText("" + ukupno);
+                    hand.bacanje = Hand.Bacanje.POCETAK;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    view.setEnabled(false);
+                    postaviPoljeZaKlikcUDoleKoloni();
+
+
+                } else {
+                    Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+                }
+            }
+            break;
+
         }
     }
+
+    private int klikNaGoreKolonu(View view, int kockica, int sledecePolje) {
+        int ukupno = 0;
+        if (hand.bacanje != Hand.Bacanje.POCETAK) {
+            ukupno = hand.kolikoImaKockica(kockica) * kockica;
+            ((TextView) view).setText("" + ukupno);
+            hand.bacanje = Hand.Bacanje.POCETAK;
+            prikaziBacanje();
+            setRoolButtonText();
+            view.setEnabled(false);
+            enablovanUGoreKoloni = sledecePolje;
+            postaviPoljeZaKlikcUDoleKoloni();
+        } else {
+            Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+        }
+        return ukupno;
+    }
+
+    public void postaviPoljeZaKlikcUGoreKoloni() {
+        TextView textView = findViewById(enablovanUGoreKoloni);
+        textView.setEnabled(true);
+    }
+
+    public void goreColonaClick(View view) {
+        int id = view.getId();
+        switch (id) {
+            case R.id.d13: {
+                int ukupno = 0;
+                if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                    ukupno = hand.yumb();
+                    ((TextView) view).setText("" + ukupno);
+                    hand.bacanje = Hand.Bacanje.POCETAK;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    view.setEnabled(false);
+                    enablovanUGoreKoloni = R.id.d12;
+                    postaviPoljeZaKlikcUGoreKoloni();
+                } else {
+                    Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+                }
+            }
+            break;
+
+
+            case R.id.d12: {
+                int ukupno = 0;
+                if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                    ukupno = hand.poker();
+                    ((TextView) view).setText("" + ukupno);
+                    hand.bacanje = Hand.Bacanje.POCETAK;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    view.setEnabled(false);
+                    enablovanUGoreKoloni = R.id.d11;
+                    postaviPoljeZaKlikcUGoreKoloni();
+                } else {
+                    Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+                }
+            }
+            break;
+
+
+            case R.id.d11: {
+                int ukupno = 0;
+                if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                    ukupno = hand.full();
+                    ((TextView) view).setText("" + ukupno);
+                    hand.bacanje = Hand.Bacanje.POCETAK;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    view.setEnabled(false);
+                    enablovanUGoreKoloni = R.id.d10;
+                    postaviPoljeZaKlikcUGoreKoloni();
+                } else {
+                    Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+                }
+            }
+            break;
+
+
+            case R.id.d10: {
+                int ukupno = 0;
+                if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                    ukupno = hand.kenta();
+                    ((TextView) view).setText("" + ukupno);
+                    hand.bacanje = Hand.Bacanje.POCETAK;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    view.setEnabled(false);
+                    enablovanUGoreKoloni = R.id.d9;
+                    postaviPoljeZaKlikcUGoreKoloni();
+                } else {
+                    Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+                }
+            }
+            break;
+
+
+            case R.id.d9: {
+                int ukupno = 0;
+                if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                    ukupno = hand.triling();
+                    ((TextView) view).setText("" + ukupno);
+                    hand.bacanje = Hand.Bacanje.POCETAK;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    view.setEnabled(false);
+                    enablovanUGoreKoloni = R.id.d8;
+                    postaviPoljeZaKlikcUGoreKoloni();
+                } else {
+                    Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+                }
+            }
+            break;
+
+
+            case R.id.d8: {
+                int ukupno = 0;
+                if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                    ukupno = hand.min();
+                    sumaNaGoreMinMax -= ukupno;
+                    ((TextView) view).setText("" + ukupno);
+                    hand.bacanje = Hand.Bacanje.POCETAK;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    view.setEnabled(false);
+                    enablovanUGoreKoloni = R.id.d7;
+                    postaviPoljeZaKlikcUGoreKoloni();
+
+
+                } else {
+                    Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+                }
+            }
+            break;
+
+
+            case R.id.d7: {
+                int ukupno = 0;
+                if (hand.bacanje != Hand.Bacanje.POCETAK) {
+                    ukupno = hand.max();
+                    sumaNaGoreMinMax += ukupno;
+                    ((TextView) view).setText("" + ukupno);
+                    hand.bacanje = Hand.Bacanje.POCETAK;
+                    prikaziBacanje();
+                    setRoolButtonText();
+                    view.setEnabled(false);
+                    enablovanUGoreKoloni = R.id.d6;
+                    postaviPoljeZaKlikcUGoreKoloni();
+                    sumaNaGoreMinMax = kolikoImaKecevaGore;
+                    TextView suma = findViewById(R.id.sumaDminmax);
+                    suma.setText(sumaNaGoreMinMax + "");
+                } else {
+                    Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
+                }
+            }
+            break;
+
+
+            case R.id.d6: {
+                int ukupno = klikNaGoreKolonu(view, 6, R.id.d5);
+                sumaNaGoreBrojevi += ukupno;
+                updateSumaNaDoleBrojevi();
+                kolikoImaSesticaGore = ukupno;
+            }
+            break;
+            case R.id.d5:
+                klikNaGoreKolonu(view, 2, R.id.d4);
+                break;
+            case R.id.d4:
+                klikNaGoreKolonu(view, 3, R.id.d3);
+                break;
+            case R.id.d3:
+                klikNaGoreKolonu(view, 4, R.id.d2);
+                break;
+            case R.id.d2:
+                klikNaGoreKolonu(view, 5, R.id.d1);
+                break;
+            case R.id.d1:
+                izracunajSumu();
+                break;
+
+
+        }
+
+    }
+
+
 }
+
+

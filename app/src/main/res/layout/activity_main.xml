@@ -225,8 +225,8 @@
         android:background="@drawable/text_view_border"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="49dp" />
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="31dp" />
 
     <TextView
         android:id="@+id/b2"
@@ -235,8 +235,8 @@
         android:background="@drawable/text_view_border"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="69dp" />
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="54dp" />
 
     <TextView
         android:id="@+id/b3"
@@ -245,8 +245,8 @@
         android:background="@drawable/text_view_border"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="89dp" />
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="77dp" />
 
     <TextView
         android:id="@+id/b4"
@@ -255,8 +255,8 @@
         android:background="@drawable/text_view_border"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="109dp" />
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="100dp" />
 
     <TextView
         android:id="@+id/b5"
@@ -265,8 +265,8 @@
         android:background="@drawable/text_view_border"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="129dp" />
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="120dp" />
 
     <TextView
         android:id="@+id/b6"
@@ -275,8 +275,8 @@
         android:background="@drawable/text_view_border"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="149dp" />
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="144dp" />
 
     <TextView
         android:id="@+id/b7"
@@ -765,8 +765,8 @@
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:text="⬆ ⬇"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="29dp" />
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="3dp" />
 
     <TextView
         android:id="@+id/ccc"
@@ -798,16 +798,18 @@
         android:id="@+id/textView52"
         android:layout_width="50dp"
         android:layout_height="20dp"
+        android:layout_marginStart="8dp"
         android:text="3"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="73dp" />
 
     <TextView
         android:id="@+id/textView51"
         android:layout_width="50dp"
         android:layout_height="20dp"
+        android:layout_marginStart="8dp"
         android:text="1"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="27dp" />
 
     <TextView
@@ -839,24 +841,27 @@
         android:id="@+id/textView44"
         android:layout_width="50dp"
         android:layout_height="20dp"
+        android:layout_marginStart="8dp"
         android:text="6"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="142dp" />
 
     <TextView
         android:id="@+id/textView43"
         android:layout_width="50dp"
         android:layout_height="20dp"
+        android:layout_marginStart="8dp"
         android:text="4"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="96dp" />
 
     <TextView
         android:id="@+id/textView42"
         android:layout_width="50dp"
         android:layout_height="20dp"
+        android:layout_marginStart="8dp"
         android:text="Σ"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="166dp" />
 
     <TextView
@@ -879,8 +884,9 @@
         android:id="@+id/textView38"
         android:layout_width="50dp"
         android:layout_height="20dp"
+        android:layout_marginStart="8dp"
         android:text="5"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="119dp" />
 
     <TextView
@@ -903,8 +909,9 @@
         android:id="@+id/textView29"
         android:layout_width="50dp"
         android:layout_height="20dp"
+        android:layout_marginStart="8dp"
         android:text="2"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="50dp" />
 
     <TextView
