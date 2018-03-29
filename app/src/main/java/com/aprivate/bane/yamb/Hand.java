@@ -10,10 +10,10 @@ public class Hand {
 
     public static int[] hand;
     int rez[];
-    private int numberOfDiceces;
-    private int numberOfSides;
     Random random;
     Bacanje bacanje;
+    private int numberOfDiceces;
+    private int numberOfSides;
 
 
     public Hand() {
@@ -73,8 +73,25 @@ public class Hand {
         return izracunajSkor(daLiImaBarem(3), 3);
     }
 
-    public boolean kenta() {
+    private boolean kenta() {
         return (rez[1] >= 1 && rez[2] >= 1 && rez[3] >= 1 && rez[4] >= 1) && (rez[0] >= 1 || rez[5] >= 1);
+    }
+
+    public int kentaPoena() {
+        if (!kenta()) {
+            return 0;
+        }
+        switch (bacanje) {
+            case PRVO_BACANJE:
+                return 66;
+            case DRUGO_BACANJE:
+                return 56;
+            case TRECE_BACANJE:
+            case KRAJ:
+                return 46;
+            default:
+                return 0;
+        }
     }
 
     public int full() {
@@ -138,13 +155,13 @@ public class Hand {
     private void izbrojKockice() {
         rez = new int[numberOfSides];
         for (int i = 0; i < numberOfDiceces; i++) {
-            rez[hand[i]-1]++;
+            rez[hand[i] - 1]++;
         }
     }
 
     public int kolikoImaKockica(int n) {
-        if (n >=1 && n <= numberOfDiceces) {
-            return rez[n-1];
+        if (n >= 1 && n <= numberOfDiceces) {
+            return rez[n - 1];
         }
         return -1;
     }
@@ -160,10 +177,10 @@ public class Hand {
         stringBuilder.append(hand[numberOfDiceces - 1]).append("]");
 
         stringBuilder.append(" stats: [");
-        for (int i = 0; i < numberOfSides-1; i++) {
-            stringBuilder.append(i+1).append(":").append(rez[i]).append(", ");
+        for (int i = 0; i < numberOfSides - 1; i++) {
+            stringBuilder.append(i + 1).append(":").append(rez[i]).append(", ");
         }
-        stringBuilder.append(numberOfSides).append(":").append(rez[numberOfSides-1]).append("]");
+        stringBuilder.append(numberOfSides).append(":").append(rez[numberOfSides - 1]).append("]");
         stringBuilder.append("{");
         int yumb = yumb();
         if (yumb != -1) {

@@ -292,7 +292,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.a10: {
                 int ukupno = 0;
                 if (hand.bacanje != Hand.Bacanje.POCETAK) {
-                    ukupno = hand.kenta();
+                    ukupno = hand.kentaPoena();
                     ((TextView) view).setText("" + ukupno);
                     hand.bacanje = Hand.Bacanje.POCETAK;
                     prikaziBacanje();
@@ -448,7 +448,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.d10: {
                 int ukupno = 0;
                 if (hand.bacanje != Hand.Bacanje.POCETAK) {
-                    ukupno = hand.kenta();
+                    ukupno = hand.kentaPoena();
                     ((TextView) view).setText("" + ukupno);
                     hand.bacanje = Hand.Bacanje.POCETAK;
                     prikaziBacanje();
