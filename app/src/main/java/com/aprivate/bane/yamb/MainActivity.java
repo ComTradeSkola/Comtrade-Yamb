@@ -167,18 +167,10 @@ public class MainActivity extends AppCompatActivity {
         roolButton.setText(roolButtonText);
     }
 
-    public void onClick(View view) {
-
-    }
-
 
     private void updateSumaNaDoleBrojevi() {
         TextView textView = findViewById(R.id.sumaA);
         textView.setText(sumaNaDoleBrojevi + "");
-    }
-
-    private void izracunajSumu() {
-
     }
 
     private int klikNaDoleKolonu(View view, int kockica, int sledecePolje) {
@@ -192,6 +184,7 @@ public class MainActivity extends AppCompatActivity {
             view.setEnabled(false);
             enablovanUDoleKoloni = sledecePolje;
             postaviPoljeZaKlikcUDoleKoloni();
+            updateSumaNaDoleBrojevi();
         } else {
             Toast.makeText(this, "Molim Vas bacite kockicu barem jednom", Toast.LENGTH_SHORT).show();
         }
@@ -213,22 +206,36 @@ public class MainActivity extends AppCompatActivity {
                 kolikoImaKecevaDole = ukupno;
             }
             break;
-            case R.id.a2:
-                klikNaDoleKolonu(view, 2, R.id.a3);
-                break;
-            case R.id.a3:
-                klikNaDoleKolonu(view, 3, R.id.a4);
-                break;
-            case R.id.a4:
-                klikNaDoleKolonu(view, 4, R.id.a5);
-                break;
-            case R.id.a5:
-                klikNaDoleKolonu(view, 5, R.id.a6);
-                break;
-            case R.id.a6:
-                klikNaDoleKolonu(view, 6, R.id.a7);
-                izracunajSumu();
-                break;
+            case R.id.a2: {
+                int ukupno = klikNaDoleKolonu(view, 2, R.id.a3);
+                sumaNaDoleBrojevi += ukupno;
+                updateSumaNaDoleBrojevi();
+            }
+            break;
+            case R.id.a3: {
+                int ukupno = klikNaDoleKolonu(view, 3, R.id.a4);
+                sumaNaDoleBrojevi += ukupno;
+                updateSumaNaDoleBrojevi();
+            }
+            break;
+            case R.id.a4: {
+                int ukupno = klikNaDoleKolonu(view, 4, R.id.a5);
+                sumaNaDoleBrojevi += ukupno;
+                updateSumaNaDoleBrojevi();
+            }
+            break;
+            case R.id.a5: {
+                int ukupno = klikNaDoleKolonu(view, 5, R.id.a6);
+                sumaNaDoleBrojevi += ukupno;
+                updateSumaNaDoleBrojevi();
+            }
+            break;
+            case R.id.a6: {
+                int ukupno = klikNaDoleKolonu(view, 6, R.id.a7);
+                sumaNaDoleBrojevi += ukupno;
+                updateSumaNaDoleBrojevi();
+            }
+            break;
 
             case R.id.a7: {
                 int ukupno = 0;
@@ -544,7 +551,6 @@ public class MainActivity extends AppCompatActivity {
                 klikNaGoreKolonu(view, 5, R.id.d1);
                 break;
             case R.id.d1:
-                izracunajSumu();
                 break;
 
 

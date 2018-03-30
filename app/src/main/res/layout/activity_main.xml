@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.aprivate.bane.yamb.MainActivity"
-    tools:layout_editor_absoluteY="81dp">
+    tools:context="com.aprivate.bane.yamb.MainActivity">
 
 
     <ToggleButton
@@ -19,7 +18,7 @@
         android:textOff=""
         android:textOn=""
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/nextThrow"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/dice2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
@@ -35,7 +34,7 @@
         android:textOff=""
         android:textOn=""
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/nextThrow"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/dice3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/dice1" />
@@ -51,7 +50,7 @@
         android:textOff=""
         android:textOn=""
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/nextThrow"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/dice4"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/dice2" />
@@ -67,7 +66,7 @@
         android:textOff=""
         android:textOn=""
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/nextThrow"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/dice5"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/dice3" />
@@ -83,7 +82,7 @@
         android:textOff=""
         android:textOn=""
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/nextThrow"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/dice6"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/dice4" />
@@ -92,25 +91,31 @@
         android:id="@+id/dice6"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/toggle_button_selector"
         android:text=""
         android:textColor="#FFFFFF"
         android:textOff=""
         android:textOn=""
         android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/dice5"
-        tools:layout_editor_absoluteY="489dp" />
+        app:layout_constraintStart_toEndOf="@+id/dice5" />
 
     <Button
         android:id="@+id/nextThrow"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="rool"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="24dp" />
+        app:layout_constraintBottom_toTopOf="@+id/sumaTrecihKolona"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/d11"
+        app:layout_constraintTop_toBottomOf="@+id/sumaDrugihKolona" />
 
 
     <TextView
@@ -118,145 +123,166 @@
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        app:layout_constraintStart_toEndOf="@+id/textView51"
-        tools:layout_editor_absoluteY="46dp" />
+        app:layout_constraintBottom_toTopOf="@+id/a2"
+        app:layout_constraintStart_toEndOf="@+id/textView51" />
 
     <TextView
         android:id="@+id/a2"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        app:layout_constraintStart_toEndOf="@+id/textView29"
-        tools:layout_editor_absoluteY="70dp" />
+        app:layout_constraintBottom_toTopOf="@+id/a3"
+        app:layout_constraintStart_toEndOf="@+id/textView29" />
 
     <TextView
         android:id="@+id/a3"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
-        app:layout_constraintStart_toEndOf="@+id/textView52"
-        tools:layout_editor_absoluteY="96dp" />
+        android:layout_marginBottom="8dp"
+        android:enabled="false"
+        android:onClick="doleColonaClick"
+        android:background="@drawable/text_view_selector"
+        app:layout_constraintBottom_toTopOf="@+id/a4"
+        app:layout_constraintStart_toEndOf="@+id/textView52" />
 
     <TextView
         android:id="@+id/a4"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
-        app:layout_constraintStart_toEndOf="@+id/textView43"
-        tools:layout_editor_absoluteY="129dp" />
+        android:layout_marginBottom="8dp"
+        android:enabled="false"
+        android:onClick="doleColonaClick"
+        android:background="@drawable/text_view_selector"
+        app:layout_constraintBottom_toTopOf="@+id/a5"
+        app:layout_constraintStart_toEndOf="@+id/textView43" />
 
     <TextView
         android:id="@+id/a5"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginStart="16dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        app:layout_constraintStart_toEndOf="@+id/textView38"
-        tools:layout_editor_absoluteY="149dp" />
+        app:layout_constraintBottom_toTopOf="@+id/a6"
+        app:layout_constraintStart_toEndOf="@+id/textView38" />
 
     <TextView
         android:id="@+id/a6"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        app:layout_constraintStart_toEndOf="@+id/textView44"
-        tools:layout_editor_absoluteY="181dp" />
+        app:layout_constraintBottom_toTopOf="@+id/sumaA"
+        app:layout_constraintStart_toEndOf="@+id/textView44" />
 
     <TextView
         android:id="@+id/a7"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        app:layout_constraintStart_toEndOf="@+id/textView37"
-        tools:layout_editor_absoluteY="232dp" />
+        app:layout_constraintBottom_toTopOf="@+id/a8"
+        app:layout_constraintStart_toEndOf="@+id/textView37" />
 
     <TextView
         android:id="@+id/a8"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        app:layout_constraintStart_toEndOf="@+id/textView41"
-        tools:layout_editor_absoluteY="258dp" />
+        app:layout_constraintBottom_toTopOf="@+id/sumaAminmax"
+        app:layout_constraintStart_toEndOf="@+id/textView41" />
 
     <TextView
         android:id="@+id/a9"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginStart="16dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        app:layout_constraintStart_toEndOf="@+id/textView33"
-        tools:layout_editor_absoluteY="319dp" />
+        app:layout_constraintBottom_toTopOf="@+id/a10"
+        app:layout_constraintStart_toEndOf="@+id/textView33" />
 
     <TextView
         android:id="@+id/a10"
         android:layout_width="40dp"
-        android:layout_height="17dp"
+        android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        app:layout_constraintStart_toEndOf="@+id/textView27"
-        tools:layout_editor_absoluteY="348dp" />
+        app:layout_constraintBottom_toTopOf="@+id/a11"
+        app:layout_constraintStart_toEndOf="@+id/textView27" />
 
     <TextView
         android:id="@+id/a11"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
-        app:layout_constraintStart_toEndOf="@+id/textView30"
-        tools:layout_editor_absoluteY="371dp" />
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_selector"
+        android:enabled="false"
+        android:onClick="doleColonaClick"
+        app:layout_constraintBottom_toTopOf="@+id/a12"
+        app:layout_constraintStart_toEndOf="@+id/textView30" />
 
     <TextView
         android:id="@+id/a12"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
-        app:layout_constraintStart_toEndOf="@+id/textView46"
-        tools:layout_editor_absoluteY="404dp" />
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_selector"
+        android:enabled="false"
+        android:onClick="doleColonaClick"
+        app:layout_constraintBottom_toTopOf="@+id/a13"
+        app:layout_constraintStart_toEndOf="@+id/textView46" />
 
     <TextView
         android:id="@+id/a13"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
         android:onClick="doleColonaClick"
-        app:layout_constraintStart_toEndOf="@+id/textView47"
-        tools:layout_editor_absoluteY="432dp" />
+        app:layout_constraintBottom_toTopOf="@+id/sumaAveliki"
+        app:layout_constraintStart_toEndOf="@+id/textView47" />
 
 
     <TextView
         android:id="@+id/b1"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
 
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/b2"
         app:layout_constraintStart_toEndOf="@+id/a1" />
@@ -268,7 +294,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
 
-        android:background="@drawable/text_view_border"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/b3"
         app:layout_constraintStart_toEndOf="@+id/a2" />
@@ -280,7 +306,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
 
-        android:background="@drawable/text_view_border"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/b4"
         app:layout_constraintStart_toEndOf="@+id/a3" />
@@ -292,7 +318,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
 
-        android:background="@drawable/text_view_border"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/b5"
         app:layout_constraintStart_toEndOf="@+id/a4" />
@@ -304,7 +330,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
 
-        android:background="@drawable/text_view_border"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/b6"
         app:layout_constraintStart_toEndOf="@+id/a5" />
@@ -316,215 +342,227 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
 
-        android:background="@drawable/text_view_border"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/sumaB"
         app:layout_constraintStart_toEndOf="@+id/a6" />
 
     <TextView
         android:id="@+id/b7"
-        android:layout_width="41dp"
+        android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
 
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/a7"
-        tools:layout_editor_absoluteY="229dp" />
+        app:layout_constraintBottom_toTopOf="@+id/b8"
+        app:layout_constraintStart_toEndOf="@+id/a7" />
 
     <TextView
         android:id="@+id/b8"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
 
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/a8"
-        tools:layout_editor_absoluteY="252dp" />
+        app:layout_constraintBottom_toTopOf="@+id/sumaBminmax"
+        app:layout_constraintStart_toEndOf="@+id/a8" />
 
     <TextView
         android:id="@+id/b9"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
 
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/a9"
-        tools:layout_editor_absoluteY="319dp" />
+        app:layout_constraintBottom_toTopOf="@+id/b10"
+        app:layout_constraintStart_toEndOf="@+id/a9" />
 
     <TextView
         android:id="@+id/b10"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
 
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/a10"
-        tools:layout_editor_absoluteY="339dp" />
+        app:layout_constraintBottom_toTopOf="@+id/b11"
+        app:layout_constraintStart_toEndOf="@+id/a10" />
 
     <TextView
         android:id="@+id/b11"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
 
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/a11"
-        tools:layout_editor_absoluteY="370dp" />
+        app:layout_constraintBottom_toTopOf="@+id/b12"
+        app:layout_constraintStart_toEndOf="@+id/a11" />
 
     <TextView
         android:id="@+id/b12"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
 
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/a12"
-        tools:layout_editor_absoluteY="404dp" />
+        app:layout_constraintBottom_toTopOf="@+id/b13"
+        app:layout_constraintStart_toEndOf="@+id/a12" />
 
     <TextView
         android:id="@+id/b13"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
 
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/a13"
-        tools:layout_editor_absoluteY="432dp" />
+        app:layout_constraintBottom_toTopOf="@+id/sumaBveliki"
+        app:layout_constraintStart_toEndOf="@+id/a13" />
 
 
     <TextView
         android:id="@+id/c1"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
 
-        android:layout_marginTop="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/c2"
-        app:layout_constraintStart_toEndOf="@+id/b1"
-        app:layout_constraintTop_toBottomOf="@+id/ccc" />
+        app:layout_constraintStart_toEndOf="@+id/b1" />
 
     <TextView
         android:id="@+id/c2"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
 
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/b2"
-        tools:layout_editor_absoluteY="50dp" />
+        app:layout_constraintBottom_toTopOf="@+id/c3"
+        app:layout_constraintStart_toEndOf="@+id/b2" />
 
     <TextView
         android:id="@+id/c3"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
 
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/b3"
-        app:layout_constraintTop_toBottomOf="@+id/c2" />
+        app:layout_constraintBottom_toTopOf="@+id/c4"
+        app:layout_constraintStart_toEndOf="@+id/b3" />
 
     <TextView
         android:id="@+id/c4"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
 
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/b4"
-        app:layout_constraintTop_toBottomOf="@+id/c3" />
+        app:layout_constraintBottom_toTopOf="@+id/c5"
+        app:layout_constraintStart_toEndOf="@+id/b4" />
 
     <TextView
         android:id="@+id/c5"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
 
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/b5"
-        app:layout_constraintTop_toBottomOf="@+id/c4" />
+        app:layout_constraintBottom_toTopOf="@+id/c6"
+        app:layout_constraintStart_toEndOf="@+id/b5" />
 
     <TextView
         android:id="@+id/c6"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
 
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/b6"
-        tools:layout_editor_absoluteY="169dp" />
+        app:layout_constraintBottom_toTopOf="@+id/sumaC"
+        app:layout_constraintStart_toEndOf="@+id/b6" />
 
     <TextView
         android:id="@+id/c7"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
 
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/b7"
-        tools:layout_editor_absoluteY="232dp" />
+        app:layout_constraintBottom_toTopOf="@+id/c8"
+        app:layout_constraintStart_toEndOf="@+id/b7" />
 
     <TextView
         android:id="@+id/c8"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
 
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/b8"
-        tools:layout_editor_absoluteY="252dp" />
+        app:layout_constraintBottom_toTopOf="@+id/sumaCminmax"
+        app:layout_constraintStart_toEndOf="@+id/b8" />
 
     <TextView
         android:id="@+id/c9"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
 
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/b9"
-        tools:layout_editor_absoluteY="319dp" />
+        app:layout_constraintBottom_toTopOf="@+id/c10"
+        app:layout_constraintStart_toEndOf="@+id/b9" />
 
     <TextView
         android:id="@+id/c10"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
 
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/b10"
-        tools:layout_editor_absoluteY="339dp" />
+        app:layout_constraintBottom_toTopOf="@+id/c11"
+        app:layout_constraintStart_toEndOf="@+id/b10" />
 
     <TextView
         android:id="@+id/c11"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
 
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/b11"
-        tools:layout_editor_absoluteY="365dp" />
+        app:layout_constraintBottom_toTopOf="@+id/c12"
+        app:layout_constraintStart_toEndOf="@+id/b11" />
 
     <TextView
         android:id="@+id/c12"
@@ -533,7 +571,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
 
-        android:background="@drawable/text_view_border"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/c13"
         app:layout_constraintStart_toEndOf="@+id/b12" />
@@ -545,7 +583,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
 
-        android:background="@drawable/text_view_border"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/sumaCveliki"
         app:layout_constraintStart_toEndOf="@+id/b13" />
@@ -555,196 +593,157 @@
         android:id="@+id/d1"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/c1"
-        app:layout_constraintTop_toBottomOf="@+id/ddd" />
+        app:layout_constraintStart_toEndOf="@+id/c1" />
 
     <TextView
         android:id="@+id/d2"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/c2"
-        app:layout_constraintTop_toBottomOf="@+id/d1" />
+        app:layout_constraintStart_toEndOf="@+id/c2" />
 
     <TextView
         android:id="@+id/d3"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/c3"
-        app:layout_constraintTop_toBottomOf="@+id/d2" />
+        app:layout_constraintStart_toEndOf="@+id/c3" />
 
     <TextView
         android:id="@+id/d4"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/c4"
-        app:layout_constraintTop_toBottomOf="@+id/d3" />
+        app:layout_constraintStart_toEndOf="@+id/c4" />
 
     <TextView
         android:id="@+id/d5"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/c5"
-        app:layout_constraintTop_toBottomOf="@+id/d4" />
+        app:layout_constraintStart_toEndOf="@+id/c5" />
 
     <TextView
         android:id="@+id/d6"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/sumaD"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/c6"
-        app:layout_constraintTop_toBottomOf="@+id/d5" />
+        app:layout_constraintStart_toEndOf="@+id/c6" />
 
     <TextView
         android:id="@+id/d7"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/c7"
-        app:layout_constraintTop_toBottomOf="@+id/sumaD" />
+        app:layout_constraintStart_toEndOf="@+id/c7" />
 
     <TextView
         android:id="@+id/d8"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/sumaDminmax"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/c8"
-        app:layout_constraintTop_toBottomOf="@+id/d7" />
+        app:layout_constraintStart_toEndOf="@+id/c8" />
 
     <TextView
         android:id="@+id/d9"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/c9"
-        app:layout_constraintTop_toBottomOf="@+id/sumaDminmax" />
+        app:layout_constraintStart_toEndOf="@+id/c9" />
 
     <TextView
         android:id="@+id/d10"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d11"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/c10"
-        app:layout_constraintTop_toBottomOf="@+id/d9" />
+        app:layout_constraintStart_toEndOf="@+id/c10" />
 
     <TextView
         android:id="@+id/d11"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/c11"
-        app:layout_constraintTop_toBottomOf="@+id/d10" />
+        app:layout_constraintStart_toEndOf="@+id/c11" />
 
     <TextView
         android:id="@+id/d12"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="12dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d13"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/c12"
-        app:layout_constraintTop_toBottomOf="@+id/d11" />
+        app:layout_constraintStart_toEndOf="@+id/c12" />
 
     <TextView
         android:id="@+id/d13"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/sumaDveliki"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/c13"
-        app:layout_constraintTop_toBottomOf="@+id/d12" />
+        app:layout_constraintStart_toEndOf="@+id/c13" />
 
 
     <TextView
@@ -752,44 +751,44 @@
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/textView42"
-        tools:layout_editor_absoluteY="209dp" />
+        app:layout_constraintBottom_toTopOf="@+id/a7"
+        app:layout_constraintStart_toEndOf="@+id/textView42" />
 
     <TextView
         android:id="@+id/sumaB"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/sumaA"
-        tools:layout_editor_absoluteY="201dp" />
+        app:layout_constraintBottom_toTopOf="@+id/b7"
+        app:layout_constraintStart_toEndOf="@+id/sumaA" />
 
     <TextView
         android:id="@+id/sumaC"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintStart_toEndOf="@+id/sumaB"
-        tools:layout_editor_absoluteY="201dp" />
+        app:layout_constraintBottom_toTopOf="@+id/c7"
+        app:layout_constraintStart_toEndOf="@+id/sumaB" />
 
     <TextView
         android:id="@+id/sumaD"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/d7"
-        app:layout_constraintEnd_toStartOf="@+id/sumaPrvihKolona"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/sumaC"
-        app:layout_constraintTop_toBottomOf="@+id/d6" />
+        app:layout_constraintStart_toEndOf="@+id/sumaC" />
 
 
     <TextView
@@ -797,47 +796,44 @@
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView39"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/a9"
+        app:layout_constraintStart_toEndOf="@+id/textView39" />
 
     <TextView
         android:id="@+id/sumaBminmax"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/sumaAminmax"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/b9"
+        app:layout_constraintStart_toEndOf="@+id/sumaAminmax" />
 
     <TextView
         android:id="@+id/sumaCminmax"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/sumaBminmax"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/c9"
+        app:layout_constraintStart_toEndOf="@+id/sumaBminmax" />
 
     <TextView
         android:id="@+id/sumaDminmax"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/d9"
-        app:layout_constraintEnd_toStartOf="@+id/sumaDrugihKolona"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/sumaCminmax"
-        app:layout_constraintTop_toBottomOf="@+id/d8" />
+        app:layout_constraintStart_toEndOf="@+id/sumaCminmax" />
 
 
     <TextView
@@ -846,7 +842,7 @@
         android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/dice2"
         app:layout_constraintStart_toEndOf="@+id/textView28" />
@@ -857,7 +853,7 @@
         android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/dice3"
         app:layout_constraintStart_toEndOf="@+id/sumaAveliki" />
@@ -868,7 +864,7 @@
         android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/dice4"
         app:layout_constraintStart_toEndOf="@+id/sumaBveliki" />
@@ -877,59 +873,58 @@
         android:id="@+id/sumaDveliki"
         android:layout_width="40dp"
         android:layout_height="20dp"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="76dp"
-        android:background="@drawable/text_view_border"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
         app:layout_constraintBottom_toTopOf="@+id/dice4"
-        app:layout_constraintStart_toEndOf="@+id/sumaCveliki"
-        app:layout_constraintTop_toBottomOf="@+id/d13" />
+        app:layout_constraintStart_toEndOf="@+id/sumaCveliki" />
 
 
     <TextView
         android:id="@+id/sumaPrvihKolona"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="165dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/sumaD"
+        app:layout_constraintStart_toEndOf="@+id/sumaD"
+        app:layout_constraintTop_toTopOf="@+id/sumaD" />
 
     <TextView
         android:id="@+id/sumaDrugihKolona"
         android:layout_width="37dp"
         android:layout_height="18dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/text_view_border"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="236dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/sumaDminmax"
+        app:layout_constraintStart_toEndOf="@+id/sumaDminmax"
+        app:layout_constraintTop_toTopOf="@+id/sumaDminmax" />
 
     <TextView
         android:id="@+id/sumaTrecihKolona"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="16dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/text_view_border"
+        android:background="@drawable/text_view_border_disabled"
         android:enabled="false"
-        app:layout_constraintBottom_toTopOf="@+id/dice6"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/sumaDveliki" />
+        app:layout_constraintBottom_toBottomOf="@+id/sumaDveliki"
+        app:layout_constraintStart_toEndOf="@+id/sumaDveliki"
+        app:layout_constraintTop_toTopOf="@+id/sumaDveliki" />
 
 
     <TextView
         android:id="@+id/aaa"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:onClick="onClick"
         android:text=" ⬇"
-        app:layout_constraintStart_toEndOf="@+id/textView57"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/a1"
+        app:layout_constraintStart_toEndOf="@+id/textView57" />
 
 
     <TextView
@@ -937,34 +932,30 @@
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:text="⬆ ⬇"
-        app:layout_constraintStart_toEndOf="@+id/aaa"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/b1"
+        app:layout_constraintStart_toEndOf="@+id/aaa" />
 
     <TextView
         android:id="@+id/ccc"
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:text=" ⬆"
-        app:layout_constraintStart_toEndOf="@+id/bbb"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/c1"
+        app:layout_constraintStart_toEndOf="@+id/bbb" />
 
     <TextView
         android:id="@+id/ddd"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:text="⬆ ⬇"
         app:layout_constraintBottom_toTopOf="@+id/d1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ccc"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/ccc" />
 
 
     <TextView
@@ -972,9 +963,10 @@
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="TRILING"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="319dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <TextView
@@ -982,46 +974,50 @@
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="3"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="98dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView43"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView51"
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="1"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="41dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView29"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView47"
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="YAMB"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="432dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView46"
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="POKER"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="404dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView47"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView57"
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:text="IGRA"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/textView51"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <TextView
@@ -1029,81 +1025,90 @@
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="6"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="182dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView42"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView43"
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="4"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="126dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView38"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView42"
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Σ"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="210dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView37"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView41"
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="MIN"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="263dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView39"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView39"
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Σ"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="291dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView33"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView38"
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="154dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView44"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView37"
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="MAX"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="235dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView41"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView30"
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="FULL"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="376dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView46"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView29"
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="2"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="69dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView52"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView28"
@@ -1120,9 +1125,10 @@
         android:layout_width="50dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="KENTA"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="348dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView30"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
