@@ -50,6 +50,7 @@ public class Hand {
                 break;
             case TRECE_BACANJE:
                 generisiNoveKockice(izborKockica);
+                izbrojKockice();
                 System.out.println("Ne moze, ruka je gotova, mora reset");
                 break;
         }

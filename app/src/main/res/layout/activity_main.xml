@@ -280,10 +280,10 @@
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
-        android:enabled="false"
+        android:background="@drawable/text_view_selector"
+        android:enabled="true"
+        android:onClick="SlobodnaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/b2"
         app:layout_constraintStart_toEndOf="@+id/a1" />
 
@@ -293,9 +293,9 @@
         android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
-        android:enabled="false"
+        android:background="@drawable/text_view_selector"
+        android:enabled="true"
+        android:onClick="SlobodnaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/b3"
         app:layout_constraintStart_toEndOf="@+id/a2" />
 
@@ -305,9 +305,9 @@
         android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
-        android:enabled="false"
+        android:background="@drawable/text_view_selector"
+        android:enabled="true"
+        android:onClick="SlobodnaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/b4"
         app:layout_constraintStart_toEndOf="@+id/a3" />
 
@@ -317,9 +317,9 @@
         android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
-        android:enabled="false"
+        android:background="@drawable/text_view_selector"
+        android:enabled="true"
+        android:onClick="SlobodnaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/b5"
         app:layout_constraintStart_toEndOf="@+id/a4" />
 
@@ -329,9 +329,9 @@
         android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
-        android:enabled="false"
+        android:background="@drawable/text_view_selector"
+        android:enabled="true"
+        android:onClick="SlobodnaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/b6"
         app:layout_constraintStart_toEndOf="@+id/a5" />
 
@@ -341,9 +341,9 @@
         android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
-        android:enabled="false"
+        android:background="@drawable/text_view_selector"
+        android:enabled="true"
+        android:onClick="SlobodnaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/sumaB"
         app:layout_constraintStart_toEndOf="@+id/a6" />
 
@@ -353,9 +353,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
-        android:enabled="false"
+        android:background="@drawable/text_view_selector"
+        android:enabled="true"
+        android:onClick="SlobodnaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/b8"
         app:layout_constraintStart_toEndOf="@+id/a7" />
 
@@ -365,9 +365,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
-        android:enabled="false"
+        android:background="@drawable/text_view_selector"
+        android:enabled="true"
+        android:onClick="SlobodnaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/sumaBminmax"
         app:layout_constraintStart_toEndOf="@+id/a8" />
 
@@ -377,9 +377,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
-        android:enabled="false"
+        android:background="@drawable/text_view_selector"
+        android:enabled="true"
+        android:onClick="SlobodnaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/b10"
         app:layout_constraintStart_toEndOf="@+id/a9" />
 
@@ -389,9 +389,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
-        android:enabled="false"
+        android:background="@drawable/text_view_selector"
+        android:enabled="true"
+        android:onClick="SlobodnaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/b11"
         app:layout_constraintStart_toEndOf="@+id/a10" />
 
@@ -401,9 +401,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
-        android:enabled="false"
+        android:background="@drawable/text_view_selector"
+        android:enabled="true"
+        android:onClick="SlobodnaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/b12"
         app:layout_constraintStart_toEndOf="@+id/a11" />
 
@@ -413,9 +413,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
-        android:enabled="false"
+        android:background="@drawable/text_view_selector"
+        android:enabled="true"
+        android:onClick="SlobodnaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/b13"
         app:layout_constraintStart_toEndOf="@+id/a12" />
 
@@ -425,9 +425,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
-        android:enabled="false"
+        android:background="@drawable/text_view_selector"
+        android:enabled="true"
+        android:onClick="SlobodnaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/sumaBveliki"
         app:layout_constraintStart_toEndOf="@+id/a13" />
 
@@ -437,10 +437,10 @@
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
+        android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/c2"
         app:layout_constraintStart_toEndOf="@+id/b1" />
 
@@ -450,9 +450,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
+        android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/c3"
         app:layout_constraintStart_toEndOf="@+id/b2" />
 
@@ -461,10 +461,10 @@
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
+        android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/c4"
         app:layout_constraintStart_toEndOf="@+id/b3" />
 
@@ -473,10 +473,10 @@
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
+        android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/c5"
         app:layout_constraintStart_toEndOf="@+id/b4" />
 
@@ -485,10 +485,10 @@
         android:layout_width="40dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
-
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
+        android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/c6"
         app:layout_constraintStart_toEndOf="@+id/b5" />
 
@@ -498,9 +498,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
+        android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/sumaC"
         app:layout_constraintStart_toEndOf="@+id/b6" />
 
@@ -510,9 +510,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
+        android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/c8"
         app:layout_constraintStart_toEndOf="@+id/b7" />
 
@@ -522,9 +522,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
+        android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/sumaCminmax"
         app:layout_constraintStart_toEndOf="@+id/b8" />
 
@@ -534,9 +534,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
+        android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/c10"
         app:layout_constraintStart_toEndOf="@+id/b9" />
 
@@ -546,9 +546,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
+        android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/c11"
         app:layout_constraintStart_toEndOf="@+id/b10" />
 
@@ -558,9 +558,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
+        android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/c12"
         app:layout_constraintStart_toEndOf="@+id/b11" />
 
@@ -570,9 +570,9 @@
         android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
+        android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/c13"
         app:layout_constraintStart_toEndOf="@+id/b12" />
 
@@ -582,9 +582,9 @@
         android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
-
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
+        android:onClick="goreColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/sumaCveliki"
         app:layout_constraintStart_toEndOf="@+id/b13" />
 
@@ -595,9 +595,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
-        android:onClick="goreColonaClick"
+        android:onClick="poslednjaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d2"
         app:layout_constraintStart_toEndOf="@+id/c1" />
 
@@ -607,9 +607,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
-        android:onClick="goreColonaClick"
+        android:onClick="poslednjaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d3"
         app:layout_constraintStart_toEndOf="@+id/c2" />
 
@@ -619,9 +619,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
-        android:onClick="goreColonaClick"
+        android:onClick="poslednjaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d4"
         app:layout_constraintStart_toEndOf="@+id/c3" />
 
@@ -631,9 +631,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
-        android:onClick="goreColonaClick"
+        android:onClick="poslednjaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d5"
         app:layout_constraintStart_toEndOf="@+id/c4" />
 
@@ -643,9 +643,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
-        android:onClick="goreColonaClick"
+        android:onClick="poslednjaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d6"
         app:layout_constraintStart_toEndOf="@+id/c5" />
 
@@ -655,9 +655,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
-        android:onClick="goreColonaClick"
+        android:onClick="poslednjaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/sumaD"
         app:layout_constraintStart_toEndOf="@+id/c6" />
 
@@ -667,9 +667,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
-        android:onClick="goreColonaClick"
+        android:onClick="poslednjaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d8"
         app:layout_constraintStart_toEndOf="@+id/c7" />
 
@@ -679,9 +679,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
-        android:onClick="goreColonaClick"
+        android:onClick="poslednjaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/sumaDminmax"
         app:layout_constraintStart_toEndOf="@+id/c8" />
 
@@ -691,9 +691,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
-        android:onClick="goreColonaClick"
+        android:onClick="poslednjaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d10"
         app:layout_constraintStart_toEndOf="@+id/c9" />
 
@@ -703,9 +703,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
-        android:onClick="goreColonaClick"
+        android:onClick="poslednjaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d11"
         app:layout_constraintStart_toEndOf="@+id/c10" />
 
@@ -715,9 +715,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
-        android:onClick="goreColonaClick"
+        android:onClick="poslednjaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d12"
         app:layout_constraintStart_toEndOf="@+id/c11" />
 
@@ -727,9 +727,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
-        android:onClick="goreColonaClick"
+        android:onClick="poslednjaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/d13"
         app:layout_constraintStart_toEndOf="@+id/c12" />
 
@@ -739,9 +739,9 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/text_view_border_disabled"
+        android:background="@drawable/text_view_selector"
         android:enabled="false"
-        android:onClick="goreColonaClick"
+        android:onClick="poslednjaColonaClick"
         app:layout_constraintBottom_toTopOf="@+id/sumaDveliki"
         app:layout_constraintStart_toEndOf="@+id/c13" />
 
@@ -1129,6 +1129,19 @@
         android:text="KENTA"
         app:layout_constraintBottom_toTopOf="@+id/textView30"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ukupnaSuma"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/text_view_border_disabled"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/d13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/d13"
+        app:layout_constraintTop_toTopOf="@+id/d13" />
 
 
 </android.support.constraint.ConstraintLayout>
